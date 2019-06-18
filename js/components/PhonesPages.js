@@ -18,8 +18,6 @@ export default class PhonesPages {
 
         this.render();
 
-        this.initComponent(PhonesCatalog, {phones : this.state.phones})
-        this.initComponent(PhoneViewer, {phone : this.state.selectedPhone})
     }
 
     initComponent(constructor, props) {
@@ -73,6 +71,16 @@ export default class PhonesPages {
     </div>
       </div>
         `;
+
+        this.initComponent(PhonesCatalog, {
+            phones : this.state.phones,
+            onPhoneSelected : (phoneId) => {
+                this.state.selectedPhone = getById(phoneId);
+                this.render();
+            }
+        });
+
+        this.initComponent(PhoneViewer, {phone : this.state.selectedPhone});
     }
 
 

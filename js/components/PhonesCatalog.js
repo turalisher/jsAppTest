@@ -6,6 +6,16 @@ export default class PhonesCatalog {
         this.props = props;
 
         this.render();
+
+        this.element.addEventListener('click', (event) => {
+            const delegateTarget = event.target.closest("[data-element=\"phone-link\"]")
+
+            if (!delegateTarget) {
+                return;
+            }
+
+            this.props.onPhoneSelected(delegateTarget.dataset.phoneId);
+        })
     }
 
     render() {
@@ -14,7 +24,10 @@ export default class PhonesCatalog {
             <!-- Получаем массив, join нужен чтобы убрать запятую по умолчанию -->
             ${ this.props.phones.map(phone => `
                 <li class="thumbnail">
-                  <a href="#!/phones/${phone.id}" class="thumb">
+                  <a 
+                    data-element="phone-link"
+                    data-phone-id="${phone.id}"
+                    href="#!/phones/${phone.id}" class="thumb">
                     <img alt="Motorola XOOM™ with Wi-Fi" src="${phone.imageUrl}">
                   </a>
         
@@ -24,7 +37,7 @@ export default class PhonesCatalog {
                     </a>
                   </div>
         
-                  <a href="#!/phones/${phone.id}">${phone.name}</a>
+                  <a data-element="phone-link" data-phone-id="${phone.id}" href="#!/phones/${phone.id}">${phone.name}</a>
                   <p>${phone.snippet}</p>
                 </li>
             `).join('')}
