@@ -1,16 +1,35 @@
 'use strict';
 import PhonesCatalog from './PhonesCatalog.js';
-
+import PhoneViewer from './PhoneViewer.js';
+import {getAll, getById} from '../api/Phone.js';
 export default class PhonesPages {
 
     constructor(element) {
         this.element = element;
 
+
+        //get array of mobiles from json;
+        this.state = {
+            phones : getAll(),
+            selectedPhone : null,
+        };
+
+        console.dir(this.state);
+
         this.render();
 
-        new PhonesCatalog(
-          document.querySelector('PhonesCatalog')
-        );
+        this.initComponent(PhonesCatalog, {phones : this.state.phones})
+        this.initComponent(PhoneViewer, {phone : this.state.selectedPhone})
+    }
+
+    initComponent(constructor, props) {
+        const container = this.element.querySelector(constructor.name);
+
+        if (!container) {
+            return;
+        }
+
+        new constructor(container,props);
     }
 
     render() {
@@ -46,7 +65,11 @@ export default class PhonesPages {
 
     <!--Main content-->
     <div class="col-md-10">
-        <PhonesCatalog></PhonesCatalog>
+        ${this.state.selectedPhone ? `
+            <PhoneViewer></PhoneViewer>
+        ` : `
+            <PhonesCatalog></PhonesCatalog>
+        ` }
     </div>
       </div>
         `;
