@@ -2,6 +2,8 @@
 import PhonesCatalog from './PhonesCatalog.js';
 import PhoneViewer from './PhoneViewer.js';
 import {getAll, getById} from '../api/Phone.js';
+import PhonesBasket from './PhonesBasket.js';
+
 export default class PhonesPages {
 
     constructor(element) {
@@ -12,6 +14,7 @@ export default class PhonesPages {
         this.state = {
             phones : getAll(),
             selectedPhone : null,
+            basketItems : [],
         };
 
         console.dir(this.state);
@@ -80,7 +83,13 @@ export default class PhonesPages {
             }
         });
 
-        this.initComponent(PhoneViewer, {phone : this.state.selectedPhone});
+        this.initComponent(PhoneViewer, {
+            phone : this.state.selectedPhone,
+            onBack : () => {
+                this.state.selectedPhone = null;
+                this.render();
+            }
+        });
     }
 
 

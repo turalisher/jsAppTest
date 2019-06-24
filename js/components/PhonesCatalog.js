@@ -15,7 +15,7 @@ export default class PhonesCatalog {
             }
 
             this.props.onPhoneSelected(delegateTarget.dataset.phoneId);
-        })
+        });
     }
 
     render() {
