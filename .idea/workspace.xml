@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19d59a6e-fdc3-41e5-a257-9cab983ce15d" name="Default Changelist" comment="added onPhoneSelected">
-      <change afterPath="$PROJECT_DIR$/js/components/PhonesBasket.js" afterDir="false" />
+    <list default="true" id="19d59a6e-fdc3-41e5-a257-9cab983ce15d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/components/PhoneViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/PhoneViewer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/PhonesCatalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/PhonesCatalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/PhonesPages.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/PhonesPages.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,11 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/components/PhoneViewer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-              <folding>
-                <element signature="n#!!block;n#constructor#0;n#PhoneViewer#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -117,8 +111,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-120" />
-    <option name="y" value="1" />
+    <option name="x" value="34" />
+    <option name="y" value="15" />
     <option name="width" value="1145" />
     <option name="height" value="735" />
   </component>
@@ -196,7 +190,7 @@
       <updated>1560810548355</updated>
       <workItem from="1560810550207" duration="11368000" />
       <workItem from="1561136682475" duration="3140000" />
-      <workItem from="1561226534970" duration="4612000" />
+      <workItem from="1561226534970" duration="7004000" />
     </task>
     <task id="LOCAL-00001" summary="small changes">
       <created>1560811500885</created>
@@ -233,11 +227,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560871499988</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added images from phones">
+      <created>1561409422034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561409422034</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19120000" />
+    <option name="totallyTimeSpent" value="21512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -249,7 +250,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-120" y="1" width="1145" height="735" extended-state="0" />
+    <frame x="34" y="15" width="1145" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24932249" />
@@ -280,7 +281,8 @@
     <MESSAGE value="Import/export phonesCatalog" />
     <MESSAGE value="initFunction Component" />
     <MESSAGE value="added onPhoneSelected" />
-    <option name="LAST_COMMIT_MESSAGE" value="added onPhoneSelected" />
+    <MESSAGE value="added images from phones" />
+    <option name="LAST_COMMIT_MESSAGE" value="added images from phones" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/app.js">
@@ -372,11 +374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/components/PhoneViewer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#PhoneViewer#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
         </state>
       </provider>
     </entry>
