@@ -7,14 +7,12 @@ export default class PhonesCatalog extends Component{
 
         this.render();
 
-        this.element.addEventListener('click', (event) => {
-            const delegateTarget = event.target.closest("[data-element=\"phone-link\"]")
+        this.on('click', 'phone-link',(event) => {
+            this.props.onPhoneSelected(event.delegateTarget.dataset.phoneId);
+        });
 
-            if (!delegateTarget) {
-                return;
-            }
-
-            this.props.onPhoneSelected(delegateTarget.dataset.phoneId);
+        this.on('click', 'add-button', (event) => {
+            this.props.onAdd(event.delegateTarget.dataset.phoneId)
         });
     }
 
