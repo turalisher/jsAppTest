@@ -2,13 +2,13 @@
 import PhonesCatalog from './PhonesCatalog.js';
 import PhoneViewer from './PhoneViewer.js';
 import {getAll, getById} from '../api/Phone.js';
+import Component from '../Component.js';
 import PhonesBasket from './PhonesBasket.js';
 
-export default class PhonesPages {
+export default class PhonesPages extends Component{
 
     constructor(element) {
-        this.element = element;
-
+        super(element);
 
         //get array of mobiles from json;
         this.state = {
@@ -54,14 +54,7 @@ export default class PhonesPages {
         </p>
       </section>
 
-      <section>
-        <p>Shopping Cart</p>
-        <ul>
-          <li>Phone 1 <button>x</button></li>
-          <li>Phone 2 <button>x</button></li>
-          <li>Phone 3 <button>x</button></li>
-        </ul>
-      </section>
+
     </div>
 
     <!--Main content-->

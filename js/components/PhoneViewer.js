@@ -1,38 +1,39 @@
-export default class PhoneViewer {
+import Component from '../Component.js';
+
+export default class PhoneViewer extends Component{
     constructor(element, props) {
-        this.element = element;
-        this.props = props;
+        super(); //вызываем конструктор Component
         this.state = {
             currentImage: this.props.phone.images[0]
         }
 
         this.render();
 
-        this.element.addEventListener('click', (event) => {
-            const delegateTarget = event.target.closest("[data-element=\"back-button\"]")
-
-            if (!delegateTarget) {
-                return;
-            }
-
-            this.props.onBack();
-        });
-
-        this.element.addEventListener('click', (event) => {
-            const delegateTarget =
-                event.target.closest('[data-element="thumbnail"]');
-
-            if (!delegateTarget) {
-                return;
-            }
-
+        this.on('click', 'back-button', this.props.onBack);
+        this.on('click', 'thumbnail', (event) => {
             this.state = {
                 ...this.state,
-                currentImage: delegateTarget.src,
+                currentImage: event.delegateTarget.src,
             };
 
             this.render();
         });
+
+        // this.element.addEventListener('click', (event) => {
+        //     const delegateTarget =
+        //         event.target.closest('[data-element="thumbnail"]');
+        //
+        //     if (!delegateTarget) {
+        //         return;
+        //     }
+        //
+        //     this.state = {
+        //         ...this.state,
+        //         currentImage: delegateTarget.src,
+        //     };
+        //
+        //     this.render();
+        // });
     }
 
     render() {
@@ -68,4 +69,7 @@ export default class PhoneViewer {
             </div>  
         `;
     }
+
+
+
 }
