@@ -19,6 +19,24 @@ export default class PhonesPages extends Component {
 
         console.dir(this.state);
 
+        this.addBasketItem = (phoneId) => {
+            this.setState({basketItems : [
+                    ...this.state.basketItems,
+                    phoneId
+                ],
+            });
+        };
+        this.showPhone = (phoneId) => {
+            this.setState({
+                selectedPhone: getById(phoneId)
+            })
+        };
+        this.hidePhone = () => {
+            this.setState({
+                selectedPhone: null,
+            })
+        }
+
         this.render();
 
     }
@@ -71,27 +89,15 @@ export default class PhonesPages extends Component {
 
         this.initComponent(PhonesCatalog, {
             phones: this.state.phones,
-            onPhoneSelected: (phoneId) => {
-                this.setState({
-                    selectedPhone: getById(phoneId)
-                })
-            },
 
-            onAdd: (phoneId) => {
-                this.setState({basketItems : [
-                    ...this.state.basketItems,
-                    phoneId
-                ],
-            });
-    }
+            onPhoneSelected: this.showPhone,
+            onAdd: this.addBasketItem
 });
 
 this.initComponent(PhoneViewer, {
     phone: this.state.selectedPhone,
-    onBack: () => {
-        this.state.selectedPhone = null;
-        this.render();
-    }
+    onBack: this.hidePhone,
+    onAdd: this.addBasketItem
 });
 
 this.initComponent(PhonesBasket, {

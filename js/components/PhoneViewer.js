@@ -15,6 +15,9 @@ export default class PhoneViewer extends Component{
                 currentImage: event.delegateTarget.src,
             })
         });
+        this.on('click', 'add-button', () => {
+            this.props.onAdd(this.props.phone.id)
+        });
 
         // this.element.addEventListener('click', (event) => {
         //     const delegateTarget =
@@ -44,7 +47,7 @@ export default class PhoneViewer extends Component{
              <img class="phone" src="${currentImage}">
             
                 <button data-element="back-button">Back</button>
-                <button>Add to basket</button>
+                <button data-element="add-button">Add to basket</button>
             
             
                 <h1>${phone.name}</h1>

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="19d59a6e-fdc3-41e5-a257-9cab983ce15d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/PhonesCatalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/PhonesCatalog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/components/PhonesPages.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/PhonesPages.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/components/PhonesCatalog.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -38,10 +37,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/components/PhoneViewer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state relative-caret-position="238">
+              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
               <folding>
                 <element signature="e#531#585#0" />
+                <element signature="n#!!block;n#render#0;n#PhoneViewer#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -50,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="187">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
                 <element signature="n#!!block;n#on#0;n#Component#0;n#!!top" />
               </folding>
@@ -59,13 +59,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/components/PhonesPages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="391">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding>
                 <element signature="e#14#61#0" expanded="true" />
+                <element signature="e#613#777#0" />
+                <element signature="e#817#935#0" />
                 <element signature="e#574#753#0" />
               </folding>
             </state>
@@ -96,12 +98,12 @@
         <option value="$PROJECT_DIR$/details.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/api/Phone.js" />
-        <option value="$PROJECT_DIR$/js/Component.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/components/PhoneViewer.js" />
         <option value="$PROJECT_DIR$/js/components/PhonesBasket.js" />
-        <option value="$PROJECT_DIR$/js/components/PhonesPages.js" />
         <option value="$PROJECT_DIR$/js/components/PhonesCatalog.js" />
+        <option value="$PROJECT_DIR$/js/Component.js" />
+        <option value="$PROJECT_DIR$/js/components/PhoneViewer.js" />
+        <option value="$PROJECT_DIR$/js/components/PhonesPages.js" />
       </list>
     </option>
   </component>
@@ -179,7 +181,7 @@
       <updated>1560810548355</updated>
       <workItem from="1560810550207" duration="11368000" />
       <workItem from="1561136682475" duration="3140000" />
-      <workItem from="1561226534970" duration="15572000" />
+      <workItem from="1561226534970" duration="17197000" />
     </task>
     <task id="LOCAL-00001" summary="small changes">
       <created>1560811500885</created>
@@ -244,11 +246,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561456640428</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added button add to basket">
+      <created>1561480295541</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561480295541</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added setState">
+      <created>1561481420153</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1561481420153</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30080000" />
+    <option name="totallyTimeSpent" value="31705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -314,7 +330,9 @@
     <MESSAGE value="added chose image on imageViewer" />
     <MESSAGE value="implemented Component.js (base class)" />
     <MESSAGE value="add Basket Component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Basket Component" />
+    <MESSAGE value="added button add to basket" />
+    <MESSAGE value="added setState" />
+    <option name="LAST_COMMIT_MESSAGE" value="added setState" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api/phones/t-mobile-g2.json">
@@ -387,41 +405,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/PhoneViewer.js">
+    <entry file="file://$PROJECT_DIR$/js/components/PhonesCatalog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#531#585#0" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="n#!!block;n#on#0;n#Component#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/PhonesPages.js">
+    <entry file="file://$PROJECT_DIR$/js/components/PhoneViewer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="238">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
           <folding>
-            <element signature="e#14#61#0" expanded="true" />
-            <element signature="e#574#753#0" />
+            <element signature="e#531#585#0" />
+            <element signature="n#!!block;n#render#0;n#PhoneViewer#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/PhonesCatalog.js">
+    <entry file="file://$PROJECT_DIR$/js/components/PhonesPages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="391">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#14#61#0" expanded="true" />
+            <element signature="e#613#777#0" />
+            <element signature="e#817#935#0" />
+            <element signature="e#574#753#0" />
+          </folding>
         </state>
       </provider>
     </entry>
