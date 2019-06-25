@@ -5,16 +5,16 @@ import {getAll, getById} from '../api/Phone.js';
 import Component from '../Component.js';
 import PhonesBasket from './PhonesBasket.js';
 
-export default class PhonesPages extends Component{
+export default class PhonesPages extends Component {
 
     constructor(element) {
         super(element);
 
         //get array of mobiles from json;
         this.state = {
-            phones : getAll(),
-            selectedPhone : null,
-            basketItems : ['Iphone', 'Samsung'],
+            phones: getAll(),
+            selectedPhone: null,
+            basketItems: ['Iphone', 'Samsung'],
         };
 
         console.dir(this.state);
@@ -30,7 +30,7 @@ export default class PhonesPages extends Component{
             return;
         }
 
-        new constructor(container,props);
+        new constructor(container, props);
     }
 
     render() {
@@ -64,44 +64,40 @@ export default class PhonesPages extends Component{
             <PhoneViewer></PhoneViewer>
         ` : `
             <PhonesCatalog></PhonesCatalog>
-        ` }
+        `}
     </div>
       </div>
         `;
 
         this.initComponent(PhonesCatalog, {
-            phones : this.state.phones,
-            onPhoneSelected : (phoneId) => {
-                this.state.selectedPhone = getById(phoneId);
-                this.render();
+            phones: this.state.phones,
+            onPhoneSelected: (phoneId) => {
+                this.setState({
+                    selectedPhone: getById(phoneId)
+                })
             },
 
-            onAdd : (phoneId) => {
-                this.state = {
-                    ...this.state,
-                    basketItems: [
-                        ...this.state.basketItems,
-                        phoneId
-                    ]
-                };
-
-                this.render();
-            }
-        });
-
-        this.initComponent(PhoneViewer, {
-            phone : this.state.selectedPhone,
-            onBack : () => {
-                this.state.selectedPhone = null;
-                this.render();
-            }
-        });
-
-        this.initComponent(PhonesBasket, {
-            items : this.state.basketItems
-        });
+            onAdd: (phoneId) => {
+                this.setState({basketItems : [
+                    ...this.state.basketItems,
+                    phoneId
+                ],
+            });
     }
+});
+
+this.initComponent(PhoneViewer, {
+    phone: this.state.selectedPhone,
+    onBack: () => {
+        this.state.selectedPhone = null;
+        this.render();
+    }
+});
+
+this.initComponent(PhonesBasket, {
+    items: this.state.basketItems
+});
+}
 
 
-    
 }

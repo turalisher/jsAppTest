@@ -1,8 +1,17 @@
 export default class Component {
 
-    constructor (element, props = {}){
+    constructor(element, props = {}) {
         this.element = element;
         this.props = props;
+    }
+
+    setState(data) {
+        this.state = {
+            ...this.state,
+            ...data
+        };
+
+        this.render();
     }
 
     on(eventName, elementName, callback) {
