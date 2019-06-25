@@ -20,12 +20,23 @@ export default class PhonesPages extends Component {
         console.dir(this.state);
 
         this.addBasketItem = (phoneId) => {
-            this.setState({basketItems : [
+            this.setState({
+                basketItems: [
                     ...this.state.basketItems,
                     phoneId
                 ],
             });
         };
+        this.deleteBasketItem = (index) => {
+            const items = this.state.basketItems;
+
+            this.setState({
+                basketItems: [
+                    ...items.slice(0, index),
+                    ...items.slice(index + 1)
+                ],
+            });
+        }
         this.showPhone = (phoneId) => {
             this.setState({
                 selectedPhone: getById(phoneId)
@@ -41,15 +52,6 @@ export default class PhonesPages extends Component {
 
     }
 
-    initComponent(constructor, props) {
-        const container = this.element.querySelector(constructor.name);
-
-        if (!container) {
-            return;
-        }
-
-        new constructor(container, props);
-    }
 
     render() {
         this.element.innerHTML = `
@@ -92,18 +94,19 @@ export default class PhonesPages extends Component {
 
             onPhoneSelected: this.showPhone,
             onAdd: this.addBasketItem
-});
+        });
 
-this.initComponent(PhoneViewer, {
-    phone: this.state.selectedPhone,
-    onBack: this.hidePhone,
-    onAdd: this.addBasketItem
-});
+        this.initComponent(PhoneViewer, {
+            phone: this.state.selectedPhone,
+            onBack: this.hidePhone,
+            onAdd: this.addBasketItem
+        });
 
-this.initComponent(PhonesBasket, {
-    items: this.state.basketItems
-});
-}
+        this.initComponent(PhonesBasket, {
+            items: this.state.basketItems,
+            onDelete : this.deleteBasketItem,
+        });
+    }
 
 
 }
