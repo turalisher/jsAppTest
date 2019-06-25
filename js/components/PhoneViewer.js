@@ -2,7 +2,7 @@ import Component from '../Component.js';
 
 export default class PhoneViewer extends Component{
     constructor(element, props) {
-        super(); //вызываем конструктор Component
+        super(element, props); //вызываем конструктор Component
         this.state = {
             currentImage: this.props.phone.images[0]
         }

@@ -4,6 +4,7 @@ export default class PhonesCatalog extends Component{
     constructor(element, props){
         super(element, props);
 
+
         this.render();
 
         this.element.addEventListener('click', (event) => {
@@ -31,7 +32,9 @@ export default class PhonesCatalog extends Component{
                   </a>
         
                   <div class="phones__btn-buy-wrapper">
-                    <a class="btn btn-success">
+                    <a class="btn btn-success"
+                       data-phone-id="${phone.id}"
+                       data-element="add-button">
                       Add
                     </a>
                   </div>

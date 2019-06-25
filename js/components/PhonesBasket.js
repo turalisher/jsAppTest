@@ -1,12 +1,27 @@
-export default class PhonesBasket {
+import Component from '../Component.js';
+
+export default class PhonesBasket extends Component{
+
+    constructor(element,props){
+        super(element,props);
+
+        this.render();
+    }
 
 
     render() {
+        const { items } = this.props;
+
         this.element.innerHTML = `
        <section>
         <p>Shopping Cart</p>
         <ul>
-          <li>Phone 1 <button>x</button></li>
+          ${items.map(item => `
+            <li>
+                ${item}
+                <button>x</button>
+            </li>
+          `).join('')}
         </ul>
       </section>
         `;

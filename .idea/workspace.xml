@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d59a6e-fdc3-41e5-a257-9cab983ce15d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/Component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/components/PhoneViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/PhoneViewer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/components/PhonesBasket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/PhonesBasket.js" afterDir="false" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/components/PhonesCatalog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="595">
+              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -32,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/components/PhonesBasket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/components/PhoneViewer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="40" />
+            <state relative-caret-position="-374">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding>
                 <element signature="e#531#585#0" />
               </folding>
@@ -62,13 +61,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/components/PhonesPages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="272">
+              <caret line="88" column="42" lean-forward="true" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
               <folding>
                 <element signature="e#14#61#0" expanded="true" />
+                <element signature="e#574#753#0" />
               </folding>
             </state>
           </provider>
@@ -98,18 +98,17 @@
         <option value="$PROJECT_DIR$/details.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/api/Phone.js" />
-        <option value="$PROJECT_DIR$/js/components/PhonesPages.js" />
-        <option value="$PROJECT_DIR$/js/components/PhonesBasket.js" />
-        <option value="$PROJECT_DIR$/js/components/PhoneViewer.js" />
         <option value="$PROJECT_DIR$/js/Component.js" />
-        <option value="$PROJECT_DIR$/js/components/PhonesCatalog.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/components/PhonesPages.js" />
+        <option value="$PROJECT_DIR$/js/components/PhoneViewer.js" />
+        <option value="$PROJECT_DIR$/js/components/PhonesBasket.js" />
+        <option value="$PROJECT_DIR$/js/components/PhonesCatalog.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-13" />
-    <option name="y" value="10" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-265" />
     <option name="width" value="1145" />
     <option name="height" value="735" />
   </component>
@@ -181,7 +180,7 @@
       <updated>1560810548355</updated>
       <workItem from="1560810550207" duration="11368000" />
       <workItem from="1561136682475" duration="3140000" />
-      <workItem from="1561226534970" duration="9726000" />
+      <workItem from="1561226534970" duration="12741000" />
     </task>
     <task id="LOCAL-00001" summary="small changes">
       <created>1560811500885</created>
@@ -232,11 +231,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561411754749</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implemented Component.js (base class)">
+      <created>1561451745904</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1561451745904</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24234000" />
+    <option name="totallyTimeSpent" value="27249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,10 +254,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="10" width="1145" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24932249" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20535715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -260,7 +265,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.20930232" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.20621932" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32890365" />
@@ -269,6 +274,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20535715" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.20621932" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32890365" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -281,7 +305,8 @@
     <MESSAGE value="added onPhoneSelected" />
     <MESSAGE value="added images from phones" />
     <MESSAGE value="added chose image on imageViewer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added chose image on imageViewer" />
+    <MESSAGE value="implemented Component.js (base class)" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Component.js (base class)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api/phones/t-mobile-g2.json">
@@ -333,23 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/PhonesBasket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/PhoneViewer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="40" />
-          <folding>
-            <element signature="e#531#585#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -374,20 +382,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/PhonesCatalog.js">
+    <entry file="file://$PROJECT_DIR$/js/components/PhonesPages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="272">
+          <caret line="88" column="42" lean-forward="true" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+          <folding>
+            <element signature="e#14#61#0" expanded="true" />
+            <element signature="e#574#753#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/PhonesPages.js">
+    <entry file="file://$PROJECT_DIR$/js/components/PhoneViewer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="-374">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
-            <element signature="e#14#61#0" expanded="true" />
+            <element signature="e#531#585#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/components/PhonesBasket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/components/PhonesCatalog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
         </state>
       </provider>
     </entry>

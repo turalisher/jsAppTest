@@ -14,7 +14,7 @@ export default class PhonesPages extends Component{
         this.state = {
             phones : getAll(),
             selectedPhone : null,
-            basketItems : [],
+            basketItems : ['Iphone', 'Samsung'],
         };
 
         console.dir(this.state);
@@ -53,7 +53,8 @@ export default class PhonesPages extends Component{
           </select>
         </p>
       </section>
-
+      
+      <PhonesBasket></PhonesBasket>
 
     </div>
 
@@ -82,6 +83,10 @@ export default class PhonesPages extends Component{
                 this.state.selectedPhone = null;
                 this.render();
             }
+        });
+
+        this.initComponent(PhonesBasket, {
+            items : this.state.basketItems
         });
     }
 
