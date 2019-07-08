@@ -12,7 +12,7 @@ export default class PhonesPages extends Component {
 
         //get array of mobiles from json;
         this.state = {
-            phones: getAll(),
+            phones: [],
             selectedPhone: null,
             basketItems: ['Iphone', 'Samsung'],
         };
@@ -38,9 +38,10 @@ export default class PhonesPages extends Component {
             });
         }
         this.showPhone = (phoneId) => {
-            this.setState({
-                selectedPhone: getById(phoneId)
-            })
+            getById(phoneId)
+                .then(phoneDetails => {
+                    this.setState({ selectedPhone: phoneDetails });
+                });
         };
         this.hidePhone = () => {
             this.setState({
@@ -49,6 +50,11 @@ export default class PhonesPages extends Component {
         }
 
         this.render();
+
+        getAll()
+            .then(phones => {
+                this.setState({ phones: phones });
+            });
 
     }
 
