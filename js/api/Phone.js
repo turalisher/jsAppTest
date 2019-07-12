@@ -1,9 +1,11 @@
+const API_URL = `https://mgrinko.github.io/js-20190426/api`
+
 export const getAll = () => {
-    return fetch('https://mgrinko.github.io/js-20190426/api/phones.json')
+    return fetch(`${API_URL}/phones.json`)
         .then((res) => res.json());
 };
 
 export const getById = (phoneId) => {
-    return fetch(`https://mgrinko.github.io/js-20190426/api/phones/${phoneId}.json`)
+    return fetch(`${API_URL}/phones/${phoneId}.json`)
         .then(res => res.json());
 };
